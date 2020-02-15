@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 11, LIC=S5IEV-PSPE3-042SQ-NV26E-FY8SL-W8VCX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+G:\2018机器人\程序\主控\USER\Template.uvprojx
+Project File Date:  10/07/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling common.c...
+compiling EXIT.c...
+compiling main.c...
+main.c(19): warning:  #550-D: variable "key" was set but never used
+   	u16 key;
+main.c: 1 warning, 0 errors
+compiling camear_tx_rx.c...
+compiling map_rx_tx.c...
+compiling TIMES.c...
+compiling near.c...
+..\HARDWARE\near\near.c(45): warning:  #940-D: missing return statement at end of non-void function "near_read"
+  }
+..\HARDWARE\near\near.c: 1 warning, 0 errors
+compiling RTC.c...
+compiling top_rx_tx.c...
+compiling control.c...
+compiling besicmovement.c...
+..\APP\besicmovement\besicmovement.c(36): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Va = (int16_t)(hudu*464.932);
+..\APP\besicmovement\besicmovement.c(37): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Vb = (int16_t)(hudu*464.932);
+..\APP\besicmovement\besicmovement.c(38): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Vc = (int16_t)(hudu*464.932);
+..\APP\besicmovement\besicmovement.c(174): warning:  #177-D: variable "D_yaw" was declared but never referenced
+  	int16_t D_yaw = 0;
+..\APP\besicmovement\besicmovement.c(212): warning:  #177-D: variable "D_yaw" was declared but never referenced
+  	int16_t D_yaw = 0;
+..\APP\besicmovement\besicmovement.c: 5 warnings, 0 errors
+compiling runingcontrol.c...
+..\APP\RUNING_CONTROL\runingcontrol.c(521): warning:  #940-D: missing return statement at end of non-void function "Keep_distance"
+  }
+..\APP\RUNING_CONTROL\runingcontrol.c(633): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		X_speed = 1.9*X_cha;
+..\APP\RUNING_CONTROL\runingcontrol.c(653): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Y_speed = 1.9*Y_cha;
+..\APP\RUNING_CONTROL\runingcontrol.c: 3 warnings, 0 errors
+compiling remotecontrol.c...
+compiling crawmanger.c...
+..\APP\crawmanger\crawmanger.c(321): warning:  #940-D: missing return statement at end of non-void function "PUT_BAMBOO"
+  }
+..\APP\crawmanger\crawmanger.c(494): warning:  #940-D: missing return statement at end of non-void function "GRAB_BAMBOO"
+  }
+..\APP\crawmanger\crawmanger.c: 2 warnings, 0 errors
+compiling panda.c...
+linking...
+Program Size: Code=68998 RO-data=8022 RW-data=3000 ZI-data=68264  
+FromELF: creating hex file...
+"..\OBJ\Template.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  G:\2018机器人\程序\主控\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:17
+</pre>
+</body>
+</html>
